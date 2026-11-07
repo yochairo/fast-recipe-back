@@ -1,0 +1,20 @@
+[project]
+name = "fast-recipe-back"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Yochairo",email = "joromabe@gmail.com"}
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi (>=0.162.0,<0.163.0)",
+    "uvicorn[standard] (>=0.54.0,<0.55.0)",
+    "pydantic-settings (>=2.16.2,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "app"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
